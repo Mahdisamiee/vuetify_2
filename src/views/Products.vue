@@ -2,7 +2,7 @@
     <div class="products">
         <h1 class="subheading grey--text">معرفی بعضی از محصولات</h1>
 
-        <v-container class="pa-4 mt-3" grid-list-md>
+        <v-container class="pa-4 mt-3" grid-list-lg>
             <v-layout row wrap>
                 <v-flex xs12 md6 lg4 v-for="i in 5" :key="i">
                     <!-- 
@@ -38,12 +38,12 @@
                         </v-layout>
                         <!-- read more -->
                         <v-divider class="yellow"></v-divider>
-                        <v-expansion-panel class="grey" focusable>
-                            <v-expansion-panel-content>
-                                <div slot="header">Read More</div>
+                        <v-expansion-panel class="grey" >
+                            <v-expansion-panel-content class="text-xs-right">
+                                <div slot="header" >مشخصات</div>
                                 <v-card>
-                                    <v-card-text class="white--text px-4">
-                                        <div>
+                                    <v-card-text right class="white--text px-4">
+                                        <div >
                                             این محصول ساخته شده از بهترین مواد و وسال ممکن توسط متخصصان داخلی
                                             است که ةرفیت صادرات و برد 4000 متری را داراست.
                                         </div>
