@@ -1,24 +1,40 @@
 <template>
     <div class="products">
-        <h1 class="subheading grey--text">معرفی بعضی از محصولات</h1>
+        <v-toolbar flat class="toolbar1 white">
+            <v-layout row wrap  align-center>
+                <v-flex  sm8>
+                    <v-layout row wrap>
+                        <v-tooltip bottom>
+                            <v-btn flat small color="grey" slot="activator">
+                                <v-icon >euro_symbol</v-icon>
+                            </v-btn>
+                            <span>مرتب سازی بر اساس قیمت</span>
+                        </v-tooltip>
+                        <v-tooltip bottom>
+                            <v-btn flat small color="grey" slot="activator">
+                                <v-icon >class</v-icon>
+                            </v-btn>
+                            <span>مرتب سازی بر اساس اسم</span>
+                        </v-tooltip>
+                        <v-tooltip bottom>
+                            <v-btn flat small color="grey" slot="activator">
+                                <v-icon >favorite</v-icon>
+                            </v-btn>
+                            <span>بیشترین علاقه</span>
+                        </v-tooltip>
+                    </v-layout>
+                </v-flex>
+                <v-spacer></v-spacer>
+                <v-flex hidden-xs-only  sm4>
+                    <v-text-field prepend-icon="search" single-line></v-text-field>
+                </v-flex>
+            </v-layout>
+        </v-toolbar>
 
         <v-container class="pa-4 mt-3" grid-list-lg>
             <v-layout row wrap>
                 <v-flex xs12 md6 lg4 v-for="i in 5" :key="i">
-                    <!-- 
-                    <v-expansion-panel>
-                        <v-expansion-panel-content v-for="project in projects" :key="project.title">
-                        <div slot="header">{{project.title}}</div>
-                        <v-card>
-                            <v-card-text class="grey--text px-4">
-                            <div class="font-weight-bold">{{project.due}}</div>
-                            <div>{{project.content}}</div>
-                            </v-card-text>
-                        </v-card>
-                        </v-expansion-panel-content>
-                    </v-expansion-panel>
-                    -->
-                    <v-card dark class="grey darken-3 px-1 py-2">
+                    <v-card dark class="product-box grey darken-3 px-1 py-3 ">
                         <v-layout row>
                             <v-flex xs5 sm6 md6>
                                 <v-card-title primary-title>
@@ -44,8 +60,8 @@
                                 <v-card>
                                     <v-card-text right class="white--text px-4">
                                         <div >
-                                            این محصول ساخته شده از بهترین مواد و وسال ممکن توسط متخصصان داخلی
-                                            است که ةرفیت صادرات و برد 4000 متری را داراست.
+                                            این محصول ساخته شده از بهترین مواد و وسائل ممکن توسط متخصصان داخلی
+                                            است که ظرفیت صادرات و برد 4000 متری را داراست.
                                         </div>
                                     </v-card-text>
                                 </v-card>
@@ -74,5 +90,10 @@ export default {
 </script>
 
 <style scoped>
-
+.v-toolbar.toolbar1{
+    border-radius: 50px;
+}
+.product-box{
+    border-radius: 10px;
+}
 </style>

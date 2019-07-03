@@ -1,6 +1,6 @@
 <template>
     <nav>
-        <v-toolbar flat dark  color=""  app>
+        <v-toolbar flat dark  color="" app>
             <v-toolbar-side-icon @click="drawer = !drawer"></v-toolbar-side-icon>
             <v-toolbar-text class="white--text title  mr-4 text-truncate">
                 <h1>
@@ -46,7 +46,7 @@ export default {
         return{
             drawer: false, // for <v-navigation-drawer>
             items: [
-                { icon:'dashboard' , text:'صفحه اصلی' , route:'/'},
+                { icon:'home' , text:'صفحه اصلی' , route:'/'},
                 { icon:'folder' , text:'محصولات' , route:'/products'},
                 { icon:'person' , text:'تیم ما' , route:'/team'}
             ]
