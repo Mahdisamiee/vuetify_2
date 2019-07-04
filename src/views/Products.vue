@@ -4,24 +4,32 @@
             <v-layout row wrap  align-center>
                 <v-flex  sm8>
                     <v-layout row wrap>
-                        <v-tooltip bottom>
-                            <v-btn flat small color="grey" slot="activator">
-                                <v-icon >euro_symbol</v-icon>
-                            </v-btn>
-                            <span>مرتب سازی بر اساس قیمت</span>
-                        </v-tooltip>
-                        <v-tooltip bottom>
-                            <v-btn flat small color="grey" slot="activator">
-                                <v-icon >class</v-icon>
-                            </v-btn>
-                            <span>مرتب سازی بر اساس اسم</span>
-                        </v-tooltip>
-                        <v-tooltip bottom>
-                            <v-btn flat small color="grey" slot="activator">
-                                <v-icon >favorite</v-icon>
-                            </v-btn>
-                            <span>بیشترین علاقه</span>
-                        </v-tooltip>
+                        <v-flex xs4>
+                            <v-tooltip bottom>
+                                <v-btn flat small color="grey" slot="activator">
+                                    <v-icon >euro_symbol</v-icon>
+                                </v-btn>
+                                <span>مرتب سازی بر اساس قیمت</span>
+                            </v-tooltip>
+                        </v-flex>
+                        
+                        <v-flex xs4>
+                            <v-tooltip bottom>
+                                <v-btn flat small color="grey" slot="activator">
+                                    <v-icon >class</v-icon>
+                                </v-btn>
+                                <span>مرتب سازی بر اساس اسم</span>
+                            </v-tooltip>
+                        </v-flex>
+                        
+                        <v-flex xs4>
+                            <v-tooltip bottom>
+                                <v-btn flat small color="grey" slot="activator">
+                                    <v-icon >favorite</v-icon>
+                                </v-btn>
+                                <span>بیشترین علاقه</span>
+                            </v-tooltip>
+                        </v-flex>
                     </v-layout>
                 </v-flex>
                 <v-spacer></v-spacer>
