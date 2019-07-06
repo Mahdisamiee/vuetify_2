@@ -2,13 +2,14 @@
     <v-footer
     dark
     height="auto"
+    class="mt-3"
     >
         <v-card
         class="flex"
         flat
         tile
         >
-        <v-card-title class="teal">
+        <v-card-title class="teal darken-3">
             <strong class="subheading  mx-4">ما را در شبکه های اجتماعی دنبال کنید</strong>
 
             <v-spacer></v-spacer>
